@@ -1,0 +1,7 @@
+https://www.mynotescode.com/crud-tanpa-refresh-codeigniter-bootstrap/
+
+https://www.panduancode.com/2020/03/membuat-crud-menggunakan-codeigniter-3-dan-bootstrap-4.html
+
+https://www.itsolutionstuff.com/post/codeigniter-3-crudcreate-read-update-and-delete-using-jquery-ajax-bootstrap-models-and-mysqlexample.html
+
+https://www.codepolitan.com/belajar-codeigniter-3-crud-1-57a7f9f5bde51-17045

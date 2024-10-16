@@ -1,0 +1,106 @@
+.kursi-grid {
+    display: grid;
+    gap: 5px; /* Jarak antara kursi */
+    margin-top: 10px;
+}
+
+/* Default untuk 4 kolom dengan spasi ekstra di setiap 2 kolom */
+.kursi-grid.kapasitas-50,
+.kursi-grid.kapasitas-35 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kursi-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.kursi-item:hover {
+    background-color: #e0e0e0;
+}
+
+.kursi-item input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+/* Tambahkan margin di sebelah kanan setiap dua kolom kecuali di baris terakhir */
+.kursi-item:not(.baris-terakhir-kursi):nth-child(2n) {
+    margin-right: 20px;
+}
+
+/* Atur kursi baris terakhir untuk kapasitas 50 */
+.kursi-grid.kapasitas-50 .baris-terakhir {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 kolom */
+    gap: 5px;
+    margin-right: 20px;
+}
+
+/* Atur kursi baris terakhir untuk kapasitas 35 */
+.kursi-grid.kapasitas-35 .baris-terakhir {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolom */
+    gap: 5px;
+    margin-right: 20px;
+}
+
+/* Atur kursi untuk kapasitas 22 sesuai gambar */
+.kursi-grid.kapasitas-22 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.kursi-grid.kapasitas-22 .kursi-item {
+    margin-right: 20px; /* Spasi di sebelah kanan setiap dua kolom */
+}
+
+.kursi-grid.kapasitas-22 .baris-terakhir {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start; /* Align to the start */
+    gap: 5px;
+}
+
+.baris-terakhir .kursi-item {
+    flex: 1;
+    min-width: 0; /* Membuat kursi fleksibel */
+    padding: 5px; /* Mengurangi padding untuk ukuran lebih kecil */
+    border: 1px solid #aaa;
+    margin-right: 0; /* Hapus margin kanan */
+}
+
+/* Atur kursi untuk kapasitas 15 sesuai gambar */
+.kursi-grid.kapasitas-15 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5;
+}
+
+.kursi-grid.kapasitas-15 .baris-depan {
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
+}
+
+.kursi-grid.kapasitas-15 .baris-selanjutnya {
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.kursi-item.booked label {
+    color: red; /* Change this color to suit your needs */
+    text-decoration: line-through;
+}
+
