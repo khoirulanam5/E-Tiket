@@ -1,0 +1,21 @@
+git init : memulai repository baru di local
+git clone <repo_url> : mengambil salinan dari repository yang ada
+git status : melihat file di staging area
+git add <file> : menambahkan file baru
+git add . : menambahkan semua file baru
+git commit -m "pesan" : mengirim file yang ada di staging area ke local repo
+git push : mengirim ke server repo
+git log : menampilkan riwayat commit
+git pull : mengambil perubahan terbaru dari server repo ke local repo
+git branch <branch_name> : membuat cabang baru
+git branch : menampilkan cabang yang ada di repo
+git checkout <branch_name> : berpindah ke branch lain
+git marge <branch_name> : menggabungkan perubahan dari cabang tertentu ke cabang aktif
+git branch --marged : menampilkan branch yang sudah melakukan marge
+git branch -d <name_branch> : menghapus branch
+git reset <name_file> : menghapus perubahan dari staging area
+git reset --hard <commit-hash> : Mengembalikan ke Commit Sebelumnya dan Menghapus Commit Setelahnya
+git reset --soft <commit-hash> : mengembalikan commit tersebut, tetapi menyimpan perubahan di stage dari commit yang di reset
+git checkout <commit-hash> : pindah ke commit lain
+git push --force : push ke repositori jika menggunakan reset --hard
+q / :q! : keluar dan terminal kembali normal
