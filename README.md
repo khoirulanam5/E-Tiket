@@ -1,1 +1,1 @@
-Aplikasi pemesanan tiket dan penyewaan bus
+Aplikasi reservasi tiket bus dan penyewaan bus
