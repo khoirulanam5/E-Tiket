@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistem Pemesanan Tiket & Penyewaan Bus
 
 Sistem pemesanan tiket dan penyewaan bus lengkap dengan fitur notifikasi WhatsApp, perhitungan **SERVQUAL** untuk mengukur tingkat kepuasan pelanggan, serta modul administrasi yang lengkap. Dibangun menggunakan **CodeIgniter 3**, **MySQL**, serta frontend **HTML**, **CSS**, **JavaScript**, **Bootstrap**, dan landing page modern.
@@ -149,3 +150,6 @@ Silakan lihat halaman **Contact** dalam sistem untuk informasi lebih lanjut.
 Sesuaikan lisensi (Open source / Private).
 
 ---
+=======
+Aplikasi reservasi tiket bus dan penyewaan bus
+>>>>>>> 6ea304a99c274d4dc282db803e28b772c5296c0d
